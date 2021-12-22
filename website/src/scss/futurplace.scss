@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;600;700&display=swap');
+
+@import "~@/assets/font/futurplace-icons/futurplace-icons.css";
+
+@import "bootstrap";
+
+@import "@glidejs/glide/src/assets/sass/glide.core";
+@import "~magnific-popup";
+
+@import "variables";
+@import "mixins";
+@import "animations";
+
+@import "global";
+
+@import "preloader";
+
+@import "layout";
+
+@import "sections";
+
+@import "home";
+@import "nosotros";
+@import "servicios";
+@import "busqueda";
+@import "inmueble";

@@ -1,0 +1,255 @@
+@import "@glidejs/glide/src/assets/sass/glide.core";
+
+#inmueble {
+    padding-top: 2rem;
+    #encabezado {
+        .gallery-form {
+            .gallery {
+                .glide__track {
+                    .glide__slides {
+                        transform: translate3d(0, 0, 0);
+                        backface-visibility: visible;
+                        .glide__slide {
+                            height: 640px;
+                            &.glide__slide--active {
+                                position: relative;
+                                z-index: 1;
+                            }
+                            /*.image-wrapper {
+                                position: relative;
+                                height: 100%;
+                                overflow: hidden;
+                                img {
+                                    position: absolute;
+                                    min-width: 100%;
+                                    min-height: 100%;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }*/
+                        }
+                    }
+                }
+                .image-wrapper {
+                    height: 640px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    .breadcrumbs {
+        padding: 2rem 0;
+        .content {
+            .filters {
+                .property-field {
+                    position: relative;
+                    margin-right: 1rem;
+                    label {
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 0.875rem;
+                        color: $secondary;
+                    }
+                    select,
+                    input {
+                        margin: 0;
+                        padding: 0.35rem 0.25rem;
+                        color: $secondary;
+                        background: transparent;
+                        border: 1px solid $secondary;
+                        font-size: 1rem;
+                        line-height: 1;
+                    }
+                    select {
+                        min-width: 135px;
+                        option {
+                            color: $primary;
+                        }
+                    }
+                    input {
+                        max-width: 125px;
+                        &.with-icon {
+                            max-width: 150px;
+                            padding-left: 1.25rem;
+                        }
+                    }
+                    .input-icon {
+                        position: absolute;
+                        top: 31px;
+                        left: 6px;
+                        color: $secondary;
+                        font-size: 1rem;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    #informacion {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        .content {
+            .title {
+                text-align: left;
+            }
+            .catalog-add {
+                margin-bottom: 1rem;
+                label {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 0.875rem;
+                    color: $other;
+                }
+                select {
+                    margin: 0;
+                    padding: 0.5rem 0.25rem 0.25rem;
+                    color: $other;
+                    background: transparent;
+                    border: 1px solid $other;
+                    font-size: 1rem;
+                    line-height: 1;
+                }
+                button {
+                    padding: 0.45rem 0.5rem 0.35rem;
+                    margin-left: 1rem;
+                    color: $other;
+                    border: 1px solid $other;
+                    background: transparent;
+                    line-height: 1;
+                    vertical-align: top;
+                    &:disabled {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                        &:hover {
+                            color: $other;
+                            background: transparent;
+                            border-color: $other;
+                        }
+                    }
+                    &:hover {
+                        color: $secondary;
+                        background: $primary;
+                        border-color: $secondary;
+                    }
+                }
+            }
+            ul {
+                &.with-bullets {
+                    li {
+                        position: relative;
+                        padding-left: 1rem;
+                        &::before {
+                            position: absolute;
+                            content: "\2022";
+                            left: 0;
+                            color: $primary;
+                        }
+                    }
+                }
+                li {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin-right: 0.5rem;
+                        line-height: 1;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    i {
+                        position: relative;
+                        margin-right: 0.5rem;
+                        font-size: 2rem;
+                        background: $gradient;
+                        -webkit-background-clip: text;
+	                    -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            .catalog-columns {
+                > ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    li {
+                        margin-right: 2rem;
+                        margin-bottom: 1rem;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        .input-wrapper {
+                            ul.input-options {
+                                li {
+                                    display: block;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .catalog-rows {
+                ul {
+                    li {
+                        margin-bottom: 1rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .button-action {
+                            margin-left: 0.75rem;
+                            i {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .ubicacion {
+                margin-top: 4rem;
+                .address-wrapper {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .address-row {
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                }
+                .map-content {
+                    position: relative;
+                    height: 470px;
+                    border: 1px solid $secondary;
+                    .map-wrapper {
+                        position: relative;
+                        overflow: hidden;
+                        height: 100%;
+                    }
+                    .map-overlay {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: $extra;
+                        img {
+                            width: 100%;
+                            max-width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+#inicio {
+    .banners {
+        height: 800px;
+        background: url('https://futurplace.incitrus.com/assets/img/home/banner.jpg') center;
+        background-size: cover;
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title, 
+            p {
+                text-align: center;
+            }
+            .title {
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+            p {
+                max-width: 460px;
+                margin: 1rem 0 0;
+            }
+        }
+    }
+}
+
+#comprometidos {
+    padding: 4rem 0;
+    background: $extra;
+    .content {
+        .title {
+            margin-bottom: 2rem;
+        }
+        .compromiso {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            img {
+                max-width: 50px;
+                margin-right: 1rem;
+            }
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+        .imagen {
+            img {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,318 @@
+#inmueble {
+    #encabezado {
+        .gallery-form {
+            position: relative;
+            .gallery {
+                .gallery-slider {
+                    position: relative;
+                    &:hover {
+                        .glide__arrows {
+                            .glide__arrow {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .glide__track {
+                        .glide__slides {
+                            transform: translate3d(0, 0, 0);
+                            backface-visibility: visible;
+                            .glide__slide {
+                                &.glide__slide--active {
+                                    position: relative;
+                                    z-index: 1;
+                                }
+                            }
+                        }
+                    }
+                    .glide__arrows {
+                        .glide__arrow {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: none;
+                            background: transparent;
+                            opacity: 0.5;
+                            img {
+                                width: 40px;
+                            }
+                            &.glide__arrow--left {
+                                left: 3%;
+                            }
+                            &.glide__arrow--right {
+                                right: 3%;
+                            }
+                        }
+                    }
+                    .glide__bullets {
+                        display: none;
+                    }
+                }
+                .gallery-default {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 640px;
+                    background: $extra;
+                    i {
+                        font-size: 6rem;
+                        background: $gradient;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                .image-wrapper {
+                    display: block;
+                    min-height: 640px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .inmueble-form {
+                position: absolute;
+                top: 0;
+                right: 8.33333%;
+                bottom: 0;
+            }
+        }
+    }
+
+    #informacion {
+        padding-top: 2rem;
+        .content {
+            .title {
+                text-align: left;
+            }
+            .body-form {
+                display: flex;
+                justify-content: center;
+                .inmueble-form {
+                    margin: 1rem 0 3rem;
+                    box-shadow: 11px 11px 8px #7B8289;
+                    .content {
+                        padding: 30px;
+                    }
+                }
+            }
+            ul {
+                &.with-bullets {
+                    li {
+                        padding-left: 1rem;
+                        &::before {
+                            position: absolute;
+                            content: "\2022";
+                            left: 0;
+                            color: $primary;
+                        }
+                    }
+                }
+                li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    min-height: 32px;
+                    span {
+                        margin-right: 0.5rem;
+                        line-height: 1;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    i {
+                        position: relative;
+                        margin-right: 0.5rem;
+                        font-size: 2rem;
+                        background: $gradient;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            .columnas {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    li {
+                        margin-right: 2rem;
+                        margin-bottom: 2rem;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .filas {
+                ul {
+                    li {
+                        margin-bottom: 1rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .ubicacion {
+                margin-top: 4rem;
+                .map-wrapper {
+                    position: relative;
+                    height: 470px;
+                    border: 1px solid $secondary;
+                    #map {
+                        position: relative;
+                        overflow: hidden;
+                        height: 100%;
+                    }
+                }
+            }
+            .ficha-compartir {
+                margin: 3rem 0;
+                .title {
+                    margin-bottom: 1rem;
+                    color: $primary;
+                    text-align: center;       
+                }
+                .descargar-ficha {
+                    .button {
+                        max-width: 300px;
+                        margin: 0 auto;
+                    }
+                }
+                .compartir-inmueble {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        li {
+                            margin-right: 1rem;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            a {
+                                opacity: 0.75;
+                                &:hover {
+                                    opacity: 1;
+                                }
+                                svg {
+                                    width: 20px;
+                                    fill: $primary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .inmueble-form {
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 400px;
+            height: 100%;
+            padding: 0 30px;
+            background: rgba($extra-secondary, 0.9);
+            text-align: center;
+            h5 {
+                color: $other;
+                font-weight: $semi-bold;
+            }
+            .medio {
+                margin: 1.5rem 0;
+                text-align: center;
+                a {
+                    img,
+                    p {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    img {
+                        max-width: 15px;
+                        margin-right: 1rem;
+                    }
+                    p {
+                        margin: 0;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    #inmueble {
+        .inmueble-form {
+            .content {
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #inmueble {
+        #informacion {
+            .content {
+                .columnas {
+                    ul {
+                        li {
+                            margin-right: 0;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+                .filas {
+                    .title {
+                        margin-top: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    #inmueble {
+        #encabezado {
+            .gallery-form {
+                .gallery {
+                    .gallery-slider {
+                        padding-bottom: 2rem;
+                        margin-bottom: 1.5rem;
+                        .glide__arrows {
+                            display: none;
+                        }
+                        .glide__bullets {
+                            display: flex;
+                        }
+                    }
+                    .image-wrapper {
+                        min-height: 300px;
+                    }
+                }
+            }
+        }
+        #informacion {
+            .content {
+                .ubicacion {
+                    margin-top: 2rem;
+                    .map-wrapper {
+                        height: 250px;
+                    }
+                }
+                .ficha-compartir {
+                    margin: 2rem 0 0;
+                    .compartir-inmueble {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

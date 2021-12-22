@@ -1,0 +1,130 @@
+#inicio {
+    .banners {
+        min-height: 600px;
+        background: url('~@/assets/img/home/banner.jpg') center;
+        background-size: cover;
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title {
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+            p {
+                max-width: 460px;
+                margin: 1rem 0 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#comprometidos {
+    padding: 4rem 0;
+    background: $extra;
+    .content {
+        .title {
+            margin-bottom: 2rem;
+        }
+        .compromiso {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            img {
+                max-width: 35px;
+                margin-right: 1rem;
+            }
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 0;
+            }
+        }
+        .image {
+            img {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    #comprometidos {
+        padding: 0;
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                > div {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .content {
+                    .text {
+                        padding: 0 30px;
+                        .title, 
+                        > p {
+                            text-align: center;
+                        }
+                        .title {
+                            margin: 1.5rem 0;
+                        }
+                        > p {
+                            margin-bottom: 2rem;
+                        }
+                        .compromiso {
+                            margin-bottom: 1.5rem;
+                            margin-left: 1.5rem;
+                        }
+                    }
+                    .image {
+                        img {
+                            min-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    #inicio {
+        .banners {
+            max-height: 490px;
+            min-height: auto;
+            background: url('~@/assets/img/home/banner-mobile.jpg') center top;
+            background-size: cover;
+            .content {
+                .title {
+                    margin-bottom: 0.5rem;
+                    text-align: center;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    #destacados {
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                > div {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

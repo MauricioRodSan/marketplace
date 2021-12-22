@@ -1,0 +1,151 @@
+.section-header {
+    height: 550px;
+    &#nosotros {
+        background: url('https://futurplace.incitrus.com/assets/img/nosotros/nosotros-header.jpg') center;
+        background-size: cover;
+    }
+    &#servicios {
+        background: url('https://futurplace.incitrus.com/assets/img/servicios/servicios-header.jpg') center;
+        background-size: cover;
+    }
+    > div {
+        height: 100%;
+        > div {
+            height: 100%;
+            align-items: center;
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .title {
+                    display: inline-block;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.busqueda {
+    &.on-section {
+        margin-top: -25vh;
+        margin-bottom: 10vh;
+    }
+    &.with-shadow {
+        .wrapper {
+            box-shadow: 10px 12px 8px 0px rgba(black, 0.4);
+        }
+    }
+    &.extra {
+        .wrapper {
+            background: $extra-secondary;
+        }
+    }
+    .wrapper {
+        padding: 2rem 2.5rem;
+        background: white;
+        .title {
+            margin: 1rem 0 2rem;
+            text-align: center;
+            color: $secondary;
+            line-height: 1;
+        }
+        #busqueda-form {
+            .form-group {
+                margin-bottom: 0;
+            }
+        }
+        .buttons-type {
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+.inmuebles {
+    padding: 2rem 0;
+    .content {
+        .inmueble {
+            .image {
+                width: 100%;
+                height: 14.6vw;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .informacion {
+                margin-bottom: 2rem;
+                padding: 0.75rem 1rem 1rem 1rem;
+                border: 1px solid $secondary;
+                border-top: none;
+                .precio {
+                    margin-bottom: 0.75rem;
+                    color: $secondary;
+                    font-weight: $semi-bold;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.servicios-resumidos {
+    padding: 5rem 0;
+    background: white;
+    .content {
+        > div > div > .title {
+            margin-bottom: 5rem;
+            color: $secondary;
+            text-align: center;
+        }
+        .servicio {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 4rem;
+            img {
+                max-width: 50px;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+#contacto {
+    padding: 8rem 0 12rem 0;
+    background: $extra;
+    .content {
+        .informacion {
+            max-width: 600px;
+            .title {
+                margin-bottom: 2rem;
+            }
+            > p {
+                margin-bottom: 4rem;
+            }
+            .medio {
+                display: flex;
+                margin-bottom: 3rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                img {
+                    max-width: 20px;
+                    margin-right: 1rem;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        #contacto-form {
+            textarea {
+                resize: none;
+            }
+        }
+    }
+}

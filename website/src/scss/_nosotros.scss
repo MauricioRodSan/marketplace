@@ -1,0 +1,138 @@
+#futureplace {
+    padding: 6rem 0;
+    background: white;
+    .content {
+        p {
+            max-width: 720px;
+            margin-bottom: 2rem;
+            text-align: justify;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .image {
+            img {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+#tus-aliados {
+    background: white;
+    .content {
+        > .title {
+            max-width: 550px;
+            margin: 0 auto 5rem auto;
+            color: $secondary;
+            text-align: center;
+        }
+        .ofrecemos {
+            max-width: 280px;
+            margin: 0 auto;
+            text-align: center;
+            img {
+                max-width: 75px;
+                margin-bottom: 2rem;
+            }
+            .title {
+                margin-bottom: 2rem;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .divider {
+            margin-top: 5rem;
+            background: $secondary;
+        }
+    }
+}
+
+#como-trabajamos {
+    padding: 8rem 0;
+    background: white;
+    .content {
+        > .title, 
+        .subtitle {
+            color: $secondary;
+            text-align: center;
+        }
+        .title {
+            margin-bottom: 2rem;
+        }
+        .subtitle {
+            max-width: 470px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.25rem;
+        }
+        .paso {
+            max-width: 290px;
+            margin: 0 auto;
+            text-align: center;
+            img {
+                max-width: 85px;
+                margin-bottom: 2rem;
+            }
+            .title {
+                margin-bottom: 2rem;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #futureplace {
+        padding: 3rem 0;
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                > div {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .content {
+                    .text {
+                        padding: 0 30px;
+                        margin-bottom: 3rem;
+                        p {
+                            text-align: center;
+                        }
+                    }
+                    .image {
+                        img {
+                            min-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #tus-aliados {
+        .content {
+            .ofrecemos {
+                margin-bottom: 3rem;
+            }
+            .divider {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    #como-trabajamos {
+        padding: 4rem 0 0;
+        .content {
+            .paso {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

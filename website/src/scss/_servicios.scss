@@ -1,0 +1,40 @@
+#nuestrsos-servicios {
+    padding-top: 7rem;
+    background: white;
+    .content {
+        .servicio {
+            max-width: 600px;
+            margin-bottom: 7rem;
+            img {
+                max-width: 95px;
+                margin-bottom: 2rem;
+            }
+            .title {
+                margin-bottom: 2rem;
+            }
+            p {
+                margin-bottom: 1.5rem;
+                text-align: justify;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #nuestrsos-servicios {
+        padding-top: 3rem;
+        .content {
+            .servicio {
+                max-width: none;
+                margin-bottom: 3rem;
+                text-align: center;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

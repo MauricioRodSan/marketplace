@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Gredi Icons';
+  src: url('./gredi-icons.woff2') format('woff2'),
+        url('./gredi-icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'Gredi Icons' !important;
+
+  display: inline-block;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  text-transform: none;
+  line-height: 1;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-left:before {
+  content: "\e903";
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-phone-local:before {
+  content: "\e905";
+}
+.icon-right:before {
+  content: "\e906";
+}
+.icon-phone:before {
+  content: "\e907";
+}
+.icon-submit:before {
+  content: "\e908";
+}

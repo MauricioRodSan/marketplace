@@ -1,0 +1,534 @@
+html,
+body {
+    font-size: 100%;
+}
+
+body {
+    @include overpass;
+    padding: 0;
+    font-weight: $light;
+    -webkit-overflow-scrolling: touch;
+    &.no-scroll {
+        overflow: hidden;
+        -webkit-overflow-scrolling: auto;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+a, 
+a *,
+button, 
+button * {
+    @include fade;
+}
+
+button:focus {
+    outline: 0;
+}
+
+*:focus {
+    outline: none;
+    // border: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    &.title {
+        padding: 0.75rem 1.25rem 0.25rem 1.25rem;
+        color: $primary;
+        border: 1px solid $extra;
+        line-height: 1;
+        strong {
+            font-weight: bold;
+        }
+        span {
+            color: $extra;
+        }
+    }
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: $light;
+    &.title {
+        margin: 1rem 0 2rem;
+        text-align: center;
+        color: $secondary;
+        line-height: 1;
+    }
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p,
+li {
+    color: $text;
+    font-size:  1rem;
+    strong {
+        font-weight: $bold;
+    }
+}
+
+.height-100 {
+    min-height: 100%;
+    > div {
+        height: 100%;
+        > div {
+            height: 100%;
+            align-items: center;
+        }
+    }
+}
+
+.button {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: $bold;
+    color: white;
+    background: $primary;
+    border: none;
+    text-align: center;
+    line-height: 1;
+    &:hover {
+        background: $secondary;
+        color: white;
+    }
+    &:disabled {
+        cursor: not-allowed;
+    }
+    &.small {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+        img {
+            max-width: 16px;
+            margin-right: 0.5rem;
+        }
+    }
+    &.gradient {
+        @include gradient;
+        &:hover {
+            @include gradient;
+        }
+    }
+    img {
+        display: inline;
+        width: 100%;
+        max-width: 35px;
+        margin-right: 1rem;
+        vertical-align: middle;
+    }
+}
+.button-action {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    line-height: 1;
+    i {
+    color: #232f3b;
+    opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.divider {
+    height: 1px;
+    background: $other;
+}
+
+.breadcrumbs {
+    padding: 1rem 0;
+    background: $primary;
+    .content {
+        .filters {
+            display: flex;
+            align-items: center;
+            p {
+                margin: 0 1.25rem 0 0;
+                color: $secondary;
+                line-height: 1;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.property-field {
+    label {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 0.875rem;
+    }
+    button {
+        padding: 0.45rem 0.5rem 0.35rem;
+        color: $other;
+        border: 1px solid $other;
+        background: transparent;
+        line-height: 1;
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            &:hover {
+                color: $other;
+                background: transparent;
+                border-color: $other;
+            }
+        }
+        &:hover {
+            color: $secondary;
+            background: $primary;
+            border-color: $secondary;
+        }
+    }
+    &.primary {
+        color: $primary;
+        input {
+            border: 1px solid rgba($primary, 0.5);
+        }
+    }
+    &.secondary {
+        color: $secondary;
+        input {
+            border: 1px solid rgba($secondary, 0.5);
+        }
+    }
+}
+.input-wrapper {
+    select,
+    input {
+        margin: 0;
+        padding: 0.35rem 0.25rem;
+        background: transparent;
+        border: 1px solid $secondary;
+        font-size: 1rem;
+        line-height: 1;
+    }
+    select {
+        min-width: 135px;
+        option {
+            color: $primary;
+        }
+    }
+    input {
+        margin: 0;
+        padding: 0.2rem 0;
+        font-size: 1rem;
+        line-height: 1;
+    }
+    ul.input-options {
+        position: absolute;
+        min-width: 100%;
+        top: 100%;
+        left: 0;
+        background: white;
+        border: 1px solid $primary;
+        li {
+            display: block;
+            width: 100%;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+            &:hover {
+                background: rgba($extra, 0.5);
+            }
+        }
+    }
+    &.with-icon {
+        position: relative;
+        input {
+            padding-left: 1rem;
+        }
+        .input-icon {
+            position: absolute;
+            top: 7px;
+            left: 3px;
+            line-height: 1;
+        }
+    }
+    &.inline {
+        display: inline-block;
+    }
+    &.primary {
+        input {
+            color: $primary;
+            border: 1px solid rgba($primary, 0.5);
+        }
+    }
+    &.secondary {
+        color: $secondary;
+        input {
+            border: 1px solid $secondary;
+        }
+    }
+    &.mw-400 {
+        input,
+        select {
+            min-width: 400px;
+        }
+    }
+    &.mw-125 {
+        input,
+        select {
+            max-width: 125px;
+        }
+    }
+    &.mw-100 {
+        input,
+        select {
+            max-width: 100px;
+        }
+    }
+    &.mw-90 {
+        input,
+        select {
+            max-width: 90px;
+        }
+    }
+    &.mw-80 {
+        input,
+        select {
+            max-width: 80px;
+        }
+    }
+    &.mw-70 {
+        input,
+        select {
+            max-width: 70px;
+        }
+    }
+    &.mw-60 {
+        input,
+        select {
+            max-width: 50px;
+        }
+    }
+    &.mw-50 {
+        input,
+        select {
+            max-width: 50px;
+        }
+    }
+    &.mw-100p {
+        input {
+            min-width: 100%;
+        }
+    }
+    &.only-bottom {
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+    }
+    &.w-100 {
+        input {
+            min-width: 100%;
+        }
+    }
+}
+
+.property-catalog {
+    .custom-radio {
+        position: relative;
+        input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            &:checked + label {
+                background: $primary;
+            }
+        }
+        label {
+            min-width: 30px;
+            padding: 0.4rem 0 0.2rem;
+            margin-bottom: 0;
+            color: $secondary;
+            border: 1px solid $secondary;
+            text-align: center;
+            cursor: pointer;
+            line-height: 1;
+        }
+    }
+}
+
+.catalog-item {
+    .custom-radio {
+        margin-left: 1.5rem;
+        line-height: 1;
+        &:first-child {
+            margin-left: 0;
+        }
+        label {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0;
+            color: $secondary;
+            font-size: 1rem;
+            font-weight: $bold;
+            line-height: 1;
+            cursor: pointer;
+            input {
+                position: absolute;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                visibility: hidden;
+                &:checked ~ .checkmark:after {
+                    display: block;
+                }
+            }
+            .checkmark {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background: white;
+                border-radius: 50%;
+                border: 1px solid $secondary;
+                &::after {
+                   content: "";
+                   position: absolute;
+                   display: none;
+                   top: 4px;
+                   left: 4px;
+                   width: 8px;
+                   height: 8px;
+                   border-radius: 50%;
+                   background: $secondary;
+                }
+            }
+        }
+    }
+}
+
+.inmueble {
+    position: relative;
+    &:hover {
+        .property-edit {
+            a{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .property-edit {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        z-index: 1;
+        a {
+            display: inline-block;
+            padding: 7px;
+            margin-right: 0.5rem;
+            background: transparent;
+            border: 1px solid $secondary;
+            border-radius: 50%;
+            line-height: 1;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+            &:hover,
+            &.featured,
+            &.active {
+                background: $secondary;
+                i {
+                    color: $primary;
+                }
+            }
+            &:last-child{ 
+                margin-right: 0;
+            }
+            i {
+                min-width: 20px;
+                font-size: 1rem;
+                color: $secondary;
+                text-align: center;
+
+            }
+        }
+    }
+    .property-link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.catalog-content {
+    .catalog-title {
+        display: flex;
+        .button {
+            margin-left: 0.75rem;
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            &:disabled {
+                opacity: 0.5;
+            }
+        }
+    }
+    .catalog-items {
+        .catalog-item {
+            margin-top: 1rem;
+            padding: 1rem 1rem 0 1rem;
+            border-top: 1px solid rgba($primary, 0.15);
+            &:last-child {
+                padding-bottom: 1rem;
+                border-bottom: 1px solid rgba($primary, 0.15);
+            }
+            .catalog-types {
+                display: flex;
+                &.disabled {
+                    .custom-radio {
+                        opacity: 0.5;
+                        label {
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

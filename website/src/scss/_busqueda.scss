@@ -1,0 +1,30 @@
+#busqueda {
+    #encabezado {
+        background: white;
+        .content {
+            .title {
+                color: $secondary;
+                text-align: center;
+            }
+        }
+        .filtros-orden {
+            padding: 1rem 0;
+            background: $primary;
+            .content {
+                display: flex;
+                justify-content: space-between;
+                .order-by {
+                    #order-form {
+                        select {
+                            padding: 0.25rem 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #busqueda-cuadro {
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,495 @@
+.section-header {
+    height: 550px;
+    &#nosotros {
+        background: url('~@/assets/img/nosotros/nosotros-header.jpg') center;
+        background-size: cover;
+    }
+    &#servicios {
+        background: url('~@/assets/img/servicios/servicios-header.jpg') center;
+        background-size: cover;
+    }
+    > div {
+        height: 100%;
+        > div {
+            height: 100%;
+            align-items: center;
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .title {
+                    display: inline-block;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.busqueda {
+    &.on-section {
+        margin-top: -25vh;
+        margin-bottom: 10vh;
+    }
+    &.with-divider {
+        .wrapper {
+            .divider {
+                display: block;
+            }
+        }
+    }
+    &:not(.with-divider) {
+        .wrapper {
+            .divider {
+                display: none;
+            }
+        }
+    }
+    &.with-shadow {
+        .wrapper {
+            box-shadow: 10px 12px 8px 0px rgba(black, 0.4);
+        }
+    }
+    &.extra {
+        .wrapper {
+            background: $extra-secondary;
+        }
+    }
+    .wrapper {
+        padding: 2rem 2.5rem;
+        background: white;
+        .title {
+            margin: 1rem 0 2rem;
+            text-align: center;
+            color: $secondary;
+            line-height: 1;
+        }
+        #busqueda-form {
+            .property-transaction {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .custom-radio {
+                    margin-left: 1.5rem;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    label {
+                        position: relative;
+                        padding-left: 25px;
+                        margin-bottom: 0;
+                        color: $secondary;
+                        font-size: 1rem;
+                        font-weight: $bold;
+                        line-height: 1;
+                        cursor: pointer;
+                        input {
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                            &:checked ~ .checkmark:after {
+                                display: block;
+                            }
+                        }
+                        .checkmark {
+                            position: absolute;
+                            width: 18px;
+                            height: 18px;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            background: white;
+                            border-radius: 50%;
+                            border: 1px solid $secondary;
+                            &::after {
+                               content: "";
+                               position: absolute;
+                               display: none;
+                               top: 4px;
+                               left: 4px;
+                               width: 8px;
+                               height: 8px;
+                               border-radius: 50%;
+                               background: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+            .form-group {
+                margin-bottom: 0;
+                select {
+                    border: 1px solid $secondary;
+                    border-radius: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    option {
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+            }
+            button[type="submit"] {
+                &:disabled {
+                    cursor: not-allowed;
+                    opacity: 0.75;
+                    &:hover {
+                        background: $primary;
+                    }
+                }
+            }
+        }
+        .buttons-type {
+            margin-top: 2rem;
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:not(.disabled) {
+                    &:hover {
+                        svg {
+                            path {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+                svg {
+                    min-height: 35px;
+                    max-height: 35px;
+                    path {
+                        fill: url(#gradient-icon);
+                        transition: fill 0.4s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.property-slider:not(.glide--carousel) {
+    .glide__track {
+        .glide__slides {
+            width: auto;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            will-change: auto;
+            .glide__slide {
+                flex: 0 0 25%;
+                max-width: 25%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+    }
+    .glide__bullets {
+        display: none;
+    }
+}
+.property-slider.glide--carousel {
+    .glide__track {
+        .glide__slides {
+            .glide__slide {
+                transform: translate3d(0, 0, 0);
+                backface-visibility: visible;
+                &.glide__slide--active {
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+
+.inmuebles {
+    padding: 2rem 0;
+    .content {
+        .inmueble {
+            .image {
+                width: 100%;
+                height: 14.6vw;
+                // overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .informacion {
+                margin-bottom: 2rem;
+                padding: 0.75rem 1rem 1rem 1rem;
+                border: 1px solid $secondary;
+                border-top: none;
+                .precio {
+                    margin-bottom: 0.75rem;
+                    color: $secondary;
+                    font-weight: $semi-bold;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.servicios-resumidos {
+    padding: 5rem 0;
+    background: white;
+    .content {
+        > .title {
+            margin-bottom: 5rem;
+            color: $secondary;
+            text-align: center;
+        }
+        .servicio {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 4rem;
+            img {
+                max-width: 50px;
+                margin-right: 1rem;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#contacto {
+    padding: 8rem 0 12rem 0;
+    background: $extra;
+    .content {
+        .informacion {
+            max-width: 600px;
+            .title {
+                margin-bottom: 2rem;
+            }
+            > p {
+                margin-bottom: 4rem;
+            }
+            .medio {
+                display: flex;
+                margin-bottom: 3rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                img {
+                    max-width: 20px;
+                    margin-right: 1rem;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .property-slider:not(.glide--carousel) {
+        .glide__track {
+            .glide__slides {
+                .glide__slide {
+                    flex: 0 0 33.33%;
+                    max-width: 33.33%;
+                }
+            }
+        }
+    }
+
+    .inmuebles {
+        .content {
+            .inmueble {
+                .image {
+                    height: 20vw;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .busqueda {
+        .wrapper {
+            #busqueda-form {
+                .property-transaction {
+                    margin-bottom: 1rem;
+                    .custom-radio {
+                        margin-left: 2.5rem;
+                    }
+                }
+                .form-group {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .property-slider:not(.glide--carousel) {
+        .glide__track {
+            .glide__slides {
+                .glide__slide {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    .inmuebles {
+        .content {
+            .inmueble {
+                .image {
+                    height: 25vw;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .busqueda {
+        .wrapper {
+            padding-bottom: 1rem;
+            .buttons-type {
+                .button {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .inmuebles {
+        .content {
+            .inmueble {
+                .image {
+                    height: 30vw;
+                }
+            }
+        }
+    }
+
+    #contacto {
+        padding: 3rem 0 8rem 0;
+        .content {
+            .informacion {
+                max-width: none;
+                .title,
+                > p {
+                    text-align: center;
+                }
+                > p {
+                    margin-bottom: 2rem;
+                }
+                .medio {
+                    margin-bottom: 2rem;
+                    &:last-child {
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .section-header {
+        height: 285px;
+        &#nosotros {
+            background: url('~@/assets/img/nosotros/nosotros-header-mobile.jpg') center;
+            background-size: cover;
+        }
+        &#servicios {
+            background: url('~@/assets/img/servicios/servicios-header-mobile.jpg') center;
+            background-size: cover;
+        }
+        > div {
+            > div {
+                .content {
+                    .title {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .busqueda {
+        &.on-section {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        &:not(.with-divider) {
+            .wrapper {
+                .divider {
+                    display: block;
+                }
+            }
+        }
+        .wrapper {
+            #busqueda-form {
+                margin-bottom: 1.5rem;
+                .property-transaction {
+                    justify-content: space-between;
+                    .custom-radio {
+                        margin-left: 0;
+                        label {
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+            .buttons-type {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    .inmuebles {
+        .content {
+            .inmueble {
+                .image {
+                    height: 50vw;
+                }
+            }
+        }
+    }
+
+    .servicios-resumidos {
+        padding: 2.5rem 0;
+        .content {
+            > .title {
+                margin-bottom: 2.5rem;
+            }
+            .servicio {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 352.98px) {
+    .busqueda {
+        .wrapper {
+            #busqueda-form {
+                .property-transaction {
+                    justify-content: center;
+                    .custom-radio {
+                        margin-left: 1.5rem;
+                        &:last-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Icons';
+  src: url('./icons.woff2') format('woff2'),
+        url('./icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'Icons' !important;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  text-transform: none;
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-antiguedad:before {
+  content: "\e90b";
+}
+.icon-bano:before {
+  content: "\e90c";
+}
+.icon-catalogos:before {
+  content: "\e90d";
+}
+.icon-compra:before {
+  content: "\e921";
+}
+.icon-construccion:before {
+  content: "\e90e";
+}
+.icon-destacado:before {
+  content: "\e90f";
+}
+.icon-editar:before {
+  content: "\e910";
+}
+.icon-estacionamiento:before {
+  content: "\e911";
+}
+.icon-imagen:before {
+  content: "\e912";
+}
+.icon-inicio:before {
+  content: "\e913";
+}
+.icon-inmueble:before {
+  content: "\e914";
+}
+.icon-italica:before {
+  content: "\e915";
+}
+.icon-mostrar:before {
+  content: "\e916";
+}
+.icon-negrita:before {
+  content: "\e917";
+}
+.icon-nosotros:before {
+  content: "\e918";
+}
+.icon-ocultar:before {
+  content: "\e919";
+}
+.icon-recamara:before {
+  content: "\e91a";
+}
+.icon-remate:before {
+  content: "\e91b";
+}
+.icon-renta:before {
+  content: "\e91c";
+}
+.icon-resaltar:before {
+  content: "\e91d";
+}
+.icon-servicios:before {
+  content: "\e91e";
+}
+.icon-terreno:before {
+  content: "\e91f";
+}
+.icon-todos:before {
+  content: "\e920";
+}

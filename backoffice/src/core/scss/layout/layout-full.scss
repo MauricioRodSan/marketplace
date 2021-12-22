@@ -1,0 +1,78 @@
+@import "../../../assets/scss/variables";
+
+.layout-full {
+    height: 100%;
+    main {
+        height: 100%;
+        background: url('../../../assets/img/login/login-bg.jpg') center;
+        background-size: cover;
+        .auth-wrapper {
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            height: 100%;
+            padding: 4rem;
+            margin-left: auto;
+            background: rgba(white, 0.96);
+            .auth-content {
+                flex: auto;
+                .brand-title {
+                    margin-bottom: 2rem;
+                    text-align: center;
+                    img {
+                        max-width: 150px;
+                        margin-bottom: 2rem;
+                    }
+                    h5 {
+                        color: $primary;
+                    }
+                }
+                form {
+                    p,
+                    label {
+                        color: $other;
+                    }
+                    .form-group {
+                        margin-bottom: 1.5rem;
+                    }
+                    p {
+                        margin-bottom: 0.25rem;
+                        font-weight: $semi-bold;
+                    }
+                    input,
+                    button {
+                        display: block;
+                    }
+                    input,
+                    button {
+                        width: 100%;
+                    }
+                    label {
+                        margin: 0;
+                        font-size: .857rem;
+                    }
+                    input {
+                        padding: 0.5rem;
+                        color: $primary;
+                        font-size: 1rem;
+                        font-weight: $extra;
+                        border: 1px solid $other;
+                        line-height: 1;
+                        background: transparent;
+                    }
+                    button {
+                        margin-top: 3rem;
+                        padding: 0.75rem 1rem;
+                        font-size: 1rem;
+                        font-weight: $semi-bold;
+                        color: white;
+                        background: $gradient;
+                        border: none;
+                        text-align: center;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+}

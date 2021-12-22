@@ -1,0 +1,28 @@
+#nuestrsos-servicios {
+    padding-top: 7rem;
+    background: white;
+    .content {
+        .servicio {
+            max-width: 600px;
+            margin-bottom: 7rem;
+            img {
+                max-width: 95px;
+                margin-bottom: 2rem;
+            }
+            .title {
+                margin-bottom: 2rem;
+            }
+            p {
+                margin-bottom: 1.5rem;
+                text-align: justify;
+            }
+            > div {
+                &:last-child {
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

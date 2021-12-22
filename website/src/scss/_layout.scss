@@ -1,0 +1,235 @@
+header {
+    background: white;
+    .main-nav-bar {
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .brand {
+                padding: 1.4375rem 0;
+                a {
+                    display: block;
+                    img {
+                        width: 100%;
+                        max-width: 110px;
+                    }
+                }
+            }
+            .nav {
+                .nav-menu {
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        li {
+                            margin-left: 5rem;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                            &.phone {
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    white-space: nowrap;
+                                    img {
+                                        max-width: 10px;
+                                        margin-right: 6px;
+                                    }
+                                }
+                            }
+                            &.social {
+                                a {
+                                    display: inline-block;
+                                    img {
+                                        height: 20px;
+                                    }
+                                    &:first-child {
+                                        margin-right: 25px;
+                                    }
+                                }
+                            }
+                            a {
+                                font-size:  0.875rem;
+                                font-weight: $semi-bold;
+                                color: $other;
+                                &:hover,
+                                &.active {
+                                    color: #5bd2ee;
+                                }
+                            }
+                        }
+                    }
+                }
+                .menu-button {
+                    position: relative;
+                    width: 35px;
+                    height: 35px;
+                    padding: 0;
+                    border: none;
+                    background: none;
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        transition: opacity 0.5s ease-in-out;
+                        &.visible {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: -100px;
+    .content {
+        .address {
+            text-align: center;
+            p {
+                margin: 1.5rem 0 0.25rem;
+            }
+        }
+        .rights-privacy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                margin-bottom: 0;
+            }
+            a {
+                color: $text;
+            }
+            .divide {
+                width: 1px;
+                height: 25px;
+                margin: 0 1.25rem;
+                background: $primary;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    header {
+        .main-nav-bar {
+            .nav-bar {
+                .nav {
+                    .nav-menu {
+                        ul {
+                            li {
+                                margin-left: 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    header {
+        .main-nav-bar {
+            .nav-bar {
+                .nav {
+                    .nav-menu {
+                        position: fixed;
+                        width: 100%;
+                        max-width: 220px;
+                        top: 0;
+                        bottom: 0;
+                        left: -100%;
+                        background: $extra-secondary;
+                        overflow: auto;
+                        transition: left 0.3s cubic-bezier(0, 0, 0.58, 1);
+                        z-index: 1020;
+                        &.visible {
+                            left: 0;
+                        }
+                        ul {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 100%;
+                            li {
+                                width: 100%;
+                                padding: 1.5rem 2rem;
+                                margin-left: 0;
+                                text-align: left;
+                                border-bottom: 1px solid $other;
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .content {
+            .address {
+                p {
+                    font-size: 0.875rem;
+                }
+            }
+            .rights-privacy {
+                p, 
+                a {
+                    font-size: 0.875rem;
+                }
+                .divide {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    header {
+        .main-nav-bar {
+            .nav-bar {
+                .brand {
+                    padding: 1rem 0;
+                    a {
+                        img {
+                            max-width: 75px;
+                        }
+                    }
+                }
+                .nav {
+                    .nav-menu {
+                        ul {
+                            li {
+                                padding: 1rem 1.75rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: -115px;
+        .content {
+            .address {
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+            .rights-privacy {
+                p, 
+                a {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}

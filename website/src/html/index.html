@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Futurplace | Home</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="InCitrus - ¡Expertos en branding! - CDMX">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        ${require('@/html/layout/favicon.html')}
+
+    </head>
+
+    <body>
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute;"><linearGradient id="gradient-icon" x1="20.26" x2="20.26" y2="31.74" gradientUnits="userSpaceOnUse"><stop offset="0.01" stop-color="#5bd2ee"/><stop offset="0.78" stop-color="#45ab95"/></linearGradient></svg>
+
+        ${require('@/html/layout/preloader.html')}
+
+        ${require('@/html/layout/header.html')}
+
+        <main>
+
+            <!-- #inicio -->
+            <section id="inicio">
+                <!-- .banners -->
+                <div class="banners height-100">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-xl-10">
+                                <div class="content">
+                                    <h2 class="title">Una inversión</h2>
+                                    <h2 class="title"><strong>segura para ti<span>.</span></strong></h2>
+                                    <p>Somos un equipo altamente calificado que se anticipa a tus necesidades inmobiliarias y te seguimos paso a paso para hacer tu proyecto realidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .banners -->
+
+                <!-- .busqueda -->
+                <div class="busqueda on-section with-shadow">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-xl-10">
+                                <div class="wrapper">
+                                    <!-- <h4 class="title">Realiza otra búsqueda</h4> -->
+                                    <form id="busqueda-form">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-3">
+                                                <div class="property-transaction">
+                                                    <div class="custom-radio">
+                                                        <label>
+                                                            <input type="radio" name="operacion" value="renta">
+                                                            <span class="checkmark"></span>
+                                                            Renta
+                                                        </label>
+                                                    </div>
+                                                    <div class="custom-radio">
+                                                        <label>
+                                                            <input type="radio" name="operacion" value="compra">
+                                                            <span class="checkmark"></span>
+                                                            Compra
+                                                        </label>
+                                                    </div>
+                                                    <div class="custom-radio">
+                                                        <label>
+                                                            <input type="radio" name="operacion" value="remate">
+                                                            <span class="checkmark"></span>
+                                                            Remate
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-7">
+                                                <div class="row">
+                                                    <div class="form-group col-12 col-md-4">
+                                                        <select name="tipo" class="form-control" disabled>
+                                                            <option value="0" hidden>Tipo</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12 col-md-4">
+                                                        <select name="estado" class="form-control" disabled>
+                                                            <option>Estado</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12 col-md-4">
+                                                        <select name="municipio" class="form-control" disabled>
+                                                            <option>Municipio</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-2">
+                                                <button type="submit" class="button small w-100" disabled>
+                                                    <img src="~@/assets/img/ui/icon-search.svg" alt="">Buscar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="divider"></div>
+                                    <div class="row justify-content-center buttons-type">
+                                        <div class="col-12 col-md-11">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <a href="/inmuebles/renta" class="button w-100">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.52 31.74"><path d="M40.12,27.66c-3,6.16-5.64,3.78-11.49,2.83-1.11.24-1.2-2.82-1.53-3.36l-.44-.25c-3.89,1.08-3.47,1.43-4.43-2.54l-.41-.23c-3.61,1-3.48,1.47-4.33-2.39a16.75,16.75,0,0,0,3.87-4C21.57,17.5,37.5,29,34.65,24.47l-12.5-8.3a12.79,12.79,0,0,0,.78-2.36.85.85,0,0,1,.69.12L39.44,24.29A2.44,2.44,0,0,1,40.12,27.66ZM12.89,21.89c-14,3-18.32-19.06-4.26-21.62C22.61-2.69,27,19.33,12.89,21.89ZM10.17,7.45C9.27,2.48,1.5,4,2.54,9S11.22,12.38,10.17,7.45Z"/></svg>Inmuebles en renta
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <a href="/inmuebles/venta" class="button w-100">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.63 35.74"><path d="M11.14,21.33l3.06,2.26c4.24,3.15,4.58,2.36,9.58,2.66,1.11.07,1.83,1.85,0,2.56a12,12,0,0,1-9,0c-.48,0-2.21-1.58-2.8-1s-.13,1,.54,1.34l2.07,1.15c2.47.74,7.55,1.18,10.19-.63l7.76-5.31c1.42-1,1.78-1.25,2.94-.11.61.62-.79,2.2-1.21,2.48L22.89,34.37c-2.1,1.41-6,1.66-7,1.09l-7-3.57a2.69,2.69,0,0,0-3,.32L4.13,33.32c-.42.27-4.56-8.79-4.09-9l7.44-3a4.37,4.37,0,0,1,3.66,0Zm24-9.64L21.11.22A1,1,0,0,0,20.39,0a1,1,0,0,0-.72.22l-14,11.47a.82.82,0,0,0-.08,1.23l1.69,1.74a1,1,0,0,0,1.34.07L20.39,5.09l11.8,9.64a1,1,0,0,0,1.34-.07l1.69-1.74a.83.83,0,0,0-.08-1.23ZM14.73.38H10.62V6l4.11-3.36V.38ZM9.6,15.78v3.64a5.7,5.7,0,0,1,.58.06A6.59,6.59,0,0,1,13,20.61c1.46,1,2.5,1.74,3.29,2.32.38.29.7.52,1,.71V17.46h6.42v7.28l.27,0c1.59.09,2.23.81,2.26,2l5.08-3.48V15.78L22.09,8.14a2.31,2.31,0,0,0-1.67-.5,2.31,2.31,0,0,0-1.67.5L9.6,15.78Z"/></svg>Inmuebles en venta
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <a href="/inmuebles/remate" class="button w-100">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.9 36.09"><path d="M4.79,17.62V34.79a1.3,1.3,0,0,0,1.27,1.3H30.85a1.3,1.3,0,0,0,1.26-1.3V17.62h3v0a2,2,0,0,0,1.3-.73A2.08,2.08,0,0,0,36.17,14L19.76.47A2,2,0,0,0,18.46,0h0a1.92,1.92,0,0,0-1.31.47L11.48,5.13V1.6a.59.59,0,0,0-.59-.6H7.05a.6.6,0,0,0-.59.6V9.27L.73,14a2.08,2.08,0,0,0-.28,2.88,2,2,0,0,0,1.3.73v0h3Zm18.77-2H25.4c.32,0,.41.28.18.59l-11.67,16a1.44,1.44,0,0,1-1,.58H11.09c-.32,0-.41-.26-.18-.58l11.67-16a1.42,1.42,0,0,1,1-.59Zm-14,3.79A3.84,3.84,0,0,1,9.9,17.9a4.33,4.33,0,0,1,.85-1.28A4.13,4.13,0,0,1,12,15.76a4,4,0,0,1,3.12,0,4,4,0,0,1,2.14,2.14,3.83,3.83,0,0,1,.31,1.55A3.93,3.93,0,0,1,17.28,21a4,4,0,0,1-.86,1.26,4.18,4.18,0,0,1-1.28.86,4,4,0,0,1-3.12,0A4,4,0,0,1,9.9,21a3.93,3.93,0,0,1-.32-1.57Zm2.4,0a2.12,2.12,0,0,0,.43,1.5,1.59,1.59,0,0,0,1.18.44,1.83,1.83,0,0,0,.61-.11,1.4,1.4,0,0,0,.51-.33,1.83,1.83,0,0,0,.35-.6,3,3,0,0,0,.12-.9,2.93,2.93,0,0,0-.12-.9,1.83,1.83,0,0,0-.35-.6,1.4,1.4,0,0,0-.51-.33,1.83,1.83,0,0,0-.61-.11,1.59,1.59,0,0,0-1.18.44,2.12,2.12,0,0,0-.43,1.5Zm7.17,9.69a3.71,3.71,0,0,1,.32-1.55,4.1,4.1,0,0,1,.85-1.27,4.16,4.16,0,0,1,1.27-.87,4.08,4.08,0,0,1,3.12,0,4.16,4.16,0,0,1,1.27.87,4,4,0,0,1,.86,1.27,4,4,0,0,1,0,3.12A3.86,3.86,0,0,1,26,32a4.31,4.31,0,0,1-1.27.86,4.08,4.08,0,0,1-3.12,0A4.31,4.31,0,0,1,20.32,32a4,4,0,0,1-.85-1.27,3.74,3.74,0,0,1-.32-1.57Zm2.4,0a2.08,2.08,0,0,0,.43,1.5,1.52,1.52,0,0,0,1.17.44,1.77,1.77,0,0,0,.61-.1,1.39,1.39,0,0,0,.51-.34,1.47,1.47,0,0,0,.35-.6,2.6,2.6,0,0,0,.13-.9,2.67,2.67,0,0,0-.13-.9,1.5,1.5,0,0,0-.35-.59,1.27,1.27,0,0,0-.51-.34,1.77,1.77,0,0,0-.61-.1,1.52,1.52,0,0,0-1.17.44,2.07,2.07,0,0,0-.43,1.49Z"/></svg>Inmuebles en remate
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .busqueda -->
+
+            </section>
+            <!-- /#inicio -->
+
+            <!-- #destacados -->
+            <section id="destacados">
+                <div class="inmuebles">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-xl-10">
+                                <div class="content">
+                                    <h4 class="title">Inmuebles destacados</h4>
+
+                                    <div class="property-slider">
+                                        <div class="glide__track" data-glide-el="track">
+                                            <ul class="glide__slides">
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-02.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-03.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-02.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-03.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="glide__slide">
+                                                    <div class="inmueble">
+                                                        <a href="/inmueble">
+                                                            <div class="image">
+                                                                <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="informacion">
+                                                                <h5 class="precio">$2,500,000</h5>
+                                                                <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                                            <button class="glide__bullet" data-glide-dir="=0"><span></span></button>
+                                            <button class="glide__bullet" data-glide-dir="=1"><span></span></button>
+                                            <button class="glide__bullet" data-glide-dir="=2"><span></span></button>
+                                            <button class="glide__bullet" data-glide-dir="=3"><span></span></button>
+                                            <button class="glide__bullet" data-glide-dir="=4"><span></span></button>
+                                            <button class="glide__bullet" data-glide-dir="=5"><span></span></button>
+                                            <button class="glide__bullet" data-glide-dir="=6"><span></span></button>
+                                            <button class="glide__bullet" data-glide-dir="=7"><span></span></button>
+                                        </div>
+                                    </div>
+
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /#destacados -->
+
+            <!-- #comprometidos -->
+            <section id="comprometidos">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-11 col-xl-10">
+                            <div class="content">
+                                <div class="row align-items-start">
+                                    <div class="col-12 col-md-7 order-2 order-md-1 text">
+                                        <h3 class="title">Comprometidos con las inversiones de nuestros clientes</h3>
+                                        <p>Futurplace, es una empresa formada por personal altamente calificado que se mantiene a la vanguardia, haciendo todo lo posible por anticiparnos a las necesidades inmobiliarias nuestros clientes y exceder sus expectativas. Todos nuestros especialistas cuentan con una amplia experiencia en el sector inmobiliario. Nuestro compromiso está en mostrarle al cliente las posibilidades que existen según el tipo de proyecto que está buscando, y le damos seguridad de que el proyecto que él decida llevar a cabo saldrá de manera satisfactoria.</p>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-xl-4">
+                                                <div class="compromiso">
+                                                    <img src="~@/assets/img/home/icon-compromiso.svg" class="img-fluid" alt="">
+                                                    <p>Honestidad</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-xl-4">
+                                                <div class="compromiso">
+                                                    <img src="~@/assets/img/home/icon-compromiso.svg" class="img-fluid" alt="">
+                                                    <p>Transparencia</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-xl-4">
+                                                <div class="compromiso">
+                                                    <img src="~@/assets/img/home/icon-compromiso.svg" class="img-fluid" alt="">
+                                                    <p>Confianza</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-xl-4">
+                                                <div class="compromiso">
+                                                    <img src="~@/assets/img/home/icon-compromiso.svg" class="img-fluid" alt="">
+                                                    <p>Calidad</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-xl-4">
+                                                <div class="compromiso">
+                                                    <img src="~@/assets/img/home/icon-compromiso.svg" class="img-fluid" alt="">
+                                                    <p>Pasión</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-xl-4">
+                                                <div class="compromiso">
+                                                    <img src="~@/assets/img/home/icon-compromiso.svg" class="img-fluid" alt="">
+                                                    <p>Competitividad</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 order-1 order-md-2 image">
+                                        <img src="~@/assets/img/home/comprometidos-img.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /#comprometidos -->
+
+            <!-- #inicio-servicios -->
+            <section id="inicio-servicios">
+                <div class="servicios-resumidos">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-xl-10">
+                                <div class="content">
+                                    <h3 class="title">Servicios</h3>
+                                    <div class="row align-items-stretch">
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-compraventa.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Compraventa de inmuebles</h5>
+                                                    <p>Ayudamos en la comercialización de un bien inmueble, ya sea para venderlo o para compra de dicho inmueble.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-renta.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Renta de inmuebles</h5>
+                                                    <p>Apoyamos al arrendador a promover la renta de su inmueble, hasta encontrar al arrendatario que cumpla con los requerimientos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-derechos.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Cesiones de derechos</h5>
+                                                    <p>Otra forma de adquirir inmuebles a través de una venta que realiza un banco o una empresa administradora de carteras bancarias de crédito, a un costo incluso del 30% de su valor comercial.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-cartera.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Administración de cartera</h5>
+                                                    <p>Base de datos de morosos que se administra por medio de un tercero, quien es el que organiza la forma de cobrar.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-propiedades.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Administración de propiedades</h5>
+                                                    <p>Nos encargamos de realizar los pagos del dueño de las propiedades.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-cobranza.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Cobranza en general</h5>
+                                                    <p>Encontramos formas para recuperar deudas al dueño del inmueble, que por lo regular incluye negociar con los deudores sin necesidad de entablar acciones jurídicas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-financiamiento.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Financiamientos</h5>
+                                                    <p>Trabajamos con SOLIDEZ HIPOTECARIA para asesorías y operaciones de créditos individuales a través de diferentes instituciones de crédito.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="servicio">
+                                                <img src="~@/assets/img/servicios/servicios-inversiones.svg" class="img-fluid" alt="">
+                                                <div class="informacion">
+                                                    <h5 class="title">Inversiones</h5>
+                                                    <p>Es un crowdfunding inmobiliario, el cual es una forma diferente de invertir en el sector inmobiliario sin necesitar de una gran inversión.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                                            <a href="/servicios" class="button gradient w-100">Conoce a detalle nuestros servicios</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /#inicio-servicios -->
+
+            ${require('@/html/sections/contacto.html')}
+
+        </main>
+
+        ${require('@/html/layout/footer.html')}
+
+        <script>
+            var section = false;
+        </script>
+
+    </body>
+    
+</html>

@@ -1,0 +1,21 @@
+@import "../../../assets/scss/variables";
+
+.editor-wrapper {
+    &.changed {
+        .editor-content {
+            border-color: rgba($other-extra, 0.5);
+            &:hover, 
+            &:focus {
+                border-color: $other-extra;
+            }
+        }
+    }
+    .editor-content {
+        border: 3px dashed rgba(gray, 0.1);
+        transition: border-color 0.4s ease;
+        &:hover, 
+        &:focus {
+            border-color: rgba(gray, 0.6);
+        }
+    }
+}

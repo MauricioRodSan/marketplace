@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Futurplace | Busqueda</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="InCitrus - ¡Expertos en branding! - CDMX">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        ${require('@/html/layout/favicon.html')}
+
+    </head>
+
+    <body>
+
+        ${require('@/html/layout/header.html')}
+
+        <!-- #busqueda -->
+        <main id="busqueda">
+
+            <!-- #encabezado -->
+            <section id="encabezado">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-xl-10">
+                            <div class="content">
+                                <h3 class="title">Resultados de tu búsqueda</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtros-orden breadcrumbs">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-xl-10">
+                                <div class="content">
+                                    <div class="filters">
+                                        <p>Operación</p>
+                                        <p>/</p>
+                                        <p>Tipo de inmueble</p>
+                                    </div>
+                                    <div class="order-by">
+                                        <form id="order-form">
+                                            <select class="form-control">
+                                                <option value="0" hidden="">Tipo de inmueble</option>
+                                                <option>Fecha: más reciente</option>
+                                                <option>Fecha: más antiguo</option>
+                                                <option>Precio: más bajo</option>
+                                                <option>Precio: más alto</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /#encabezado -->
+
+            <!-- #inmuebles -->
+            <section id="inmuebles">
+                <div class="inmuebles">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-xl-10">
+                                <div class="content">
+                                    <!-- <h4 class="title">Inmuebles destacados</h4> -->
+                                    <div class="row">
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-02.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-03.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-02.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-03.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 col-lg-3">
+                                            <div class="inmueble">
+                                                <a href="/inmueble">
+                                                    <img src="~@/assets/img/inmuebles/inmueble-01.jpg" class="img-fluid" alt="">
+                                                    <div class="informacion">
+                                                        <h5 class="precio">$2,500,000</h5>
+                                                        <p>Estado / Municipio / Tipo de inmueble / Operación / Superficie / Clave/</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /#inmuebles -->
+
+            <section id="busqueda-cuadro">
+                <!-- .busqueda -->
+                <div class="busqueda with-shadow extra">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-xl-10">
+                                <div class="wrapper">
+                                    <h4 class="title">Realiza otra búsqueda</h4>
+                                    <form id="busqueda-form">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="row">
+                                                    <div class="form-group col-4">
+                                                        <input type="checkbox" id="busqueda-renta" value="Renta">
+                                                        <label class="form-check-label" for="busqueda-renta">Renta</label>
+                                                    </div>
+                                                    <div class="form-group col-4">
+                                                        <input type="checkbox" id="busqueda-compra" value="Compra">
+                                                        <label class="form-check-label" for="busqueda-compra">Compra</label>
+                                                    </div>
+                                                    <div class="form-group col-4">
+                                                        <input type="checkbox" id="busqueda-remate" value="Remate">
+                                                        <label class="form-check-label" for="busqueda-remate">Remate</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7">
+                                                <div class="row">
+                                                    <div class="form-group col-12 col-md-4">
+                                                        <select name="hospital" class="form-control">
+                                                            <option value="0" hidden="">Tipo de inmueble</option>
+                                                            <option>Casa</option>
+                                                            <option>Departamento</option>
+                                                            <option>Oficina</option>
+                                                            <option>Otros</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12 col-md-4">
+                                                        <select name="hospital" class="form-control">
+                                                            <option value="0" hidden="">Estado</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12 col-md-4">
+                                                        <select name="hospital" class="form-control">
+                                                            <option value="0" hidden="">Municipio</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12 col-lg-2">
+                                                <button type="submit" class="button small w-100">
+                                                    <img src="~@/assets/img/ui/icon-search.svg" alt="">Buscar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- <div class="divider"></div> -->
+                                    <div class="row justify-content-center buttons-type">
+                                        <div class="col-12 col-md-11">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <a href="/busqueda" class="button w-100">
+                                                        <img src="~@/assets/img/ui/icon-renta.svg" alt="">Inmuebles en renta
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <a href="/busqueda" class="button w-100">
+                                                        <img src="~@/assets/img/ui/icon-venta.svg" alt="">Inmuebles en venta
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <a href="/busqueda" class="button w-100">
+                                                        <img src="~@/assets/img/ui/icon-remate.svg" alt="">Inmuebles en remate
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .busqueda -->
+            </section>
+
+            ${require('@/html/sections/contacto.html')}
+
+        </main>
+        <!-- #busqueda -->
+
+        ${require('@/html/layout/footer.html')}
+
+        <script>
+            var section = 'busqueda';
+        </script>
+
+    </body>
+    
+</html>

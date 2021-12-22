@@ -1,0 +1,35 @@
+html,
+body {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+*:focus {
+    outline: none;
+}
